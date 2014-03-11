@@ -15,7 +15,7 @@ class Blueknow extends ReproductorExterno
 
 	public function obtenerRecomendaciones( $nombre_cancion_base )
 	{
-		if ( !$this->sistema_externo_inicializado )
+		if ( !$this->sistema_Externo_inicializado )
 		{
 			throw new \RuntimeException( "Error al intentar obtener recomendaciones de la clase " . __CLASS__ . ": Al ser un servicio de recomendaciones externo, primero debe ser inicializado." );
 		}
